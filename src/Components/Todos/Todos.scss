@@ -1,0 +1,50 @@
+.todos-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+  .todoItem-wrapper {
+    position: relative;
+    width: 50%;
+    border-radius: 50px;
+    background-color: #aec3ee;
+    margin: 10px;
+    left: 1%;
+    min-height: 55px;
+    .todoItem_delete-icon {
+      position: absolute;
+      right: 4%;
+      top: 27%;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+    .todoItem_edit-icon {
+      position: absolute;
+      right: 9%;
+      top: 27%;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+    .todoItem_updateBtn {
+      border-radius: 50px;
+      border-style: none;
+      transform: scale(1.2);
+      &:hover {
+        cursor: pointer;
+        //transform: scale(1.2);
+      }
+    }
+    .todoItem_edit-inpBox {
+      margin: 5%;
+      width: 63%;
+      border-style: none;
+      border-radius: 50px;
+      height: 16px;
+    }
+  }
+}

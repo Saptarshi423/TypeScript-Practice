@@ -1,0 +1,44 @@
+.todo-container {
+  width: 40%;
+  background-color: #373b43;
+  height: 80%;
+  border-radius: 20px;
+
+  .todos-section {
+    position: relative;
+    .todo-body-wrapper {
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+    .todos-section-input-wrapper {
+      position: relative;
+      width: 58%;
+      left: 21%;
+      .todos-section__input {
+        width: 100%;
+        height: 3rem;
+        border-radius: 30px;
+        border-style: none;
+        font-family: inherit;
+        font-size: larger;
+        font-weight: 500;
+      }
+      .todos-section__add-btn {
+        position: absolute;
+        right: 0.5%;
+        top: 8%;
+        border-radius: 50%;
+        width: 44px;
+        height: 43px;
+        border-style: none;
+        background-color: aqua;
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
